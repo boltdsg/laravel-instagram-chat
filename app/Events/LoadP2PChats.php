@@ -40,11 +40,5 @@ class LoadP2PChats implements ShouldBroadcast
     public function broadcastWith()
     {
 
-        $messages = Messages::all();
-
-        return [
-            "peerInfo" => $this->peerInfos,
-            "messages" => $messages
-        ];
     }
 }
