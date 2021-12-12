@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://bootswatch.com/4/journal/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.auth-wrapper input {
+  border: 1px solid #ccc;
+  box-shadow: unset;
+  outline: none !important;
+}
+
+.container {
+  width: 65%;
+}
+@media (max-width: 1126px) {
+  .container {
+    width: 90% !important;
+  }
+}
+
+/* Header */
+header#header {
+  padding: 10px 0px;
+  border: 0.5px solid #262626;
+  margin: auto;
+}
+header#header .header__wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+header#header #logo {
+  font-size: 17px;
+  color: black;
+  font-family: "Lobster", cursive;
+}
+header#header .header__actions {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logout__btn {
+  border: unset;
+  box-shadow: none;
+  background-color: #fff;
+  padding: 2px;
+}
+.logout__btn i {
+  color: #000;
+}
+
+.chat__wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 90vh;
+}
+
+.chat__left,
+.chat__right {
+  border: 0.5px solid #262626;
+}
+
+.chat__left {
+  border-right: none;
+  border-top: unset;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "chatUsername chatUsername" "chatUsers chatUsers";
+  grid-template-rows: -webkit-min-content 1fr;
+  grid-template-rows: min-content 1fr;
+}
+
+.chat__username {
+  grid: 1;
+  grid-area: chatUsername;
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 0.5px solid #262626;
+}
+.chat__username h3 {
+  font-size: 16px;
+}
+
+.chat__user button {
+  background-color: #fff;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em 0.5em;
+  border-radius: unset;
+  border: unset;
+}
+.chat__user button:hover {
+  background-color: #fafafa;
+  color: unset;
+}
+.chat__user button.active {
+  background-color: #e6e6e6;
+}
+
+.chat__user__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.chat__user__name {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.chat__user__active {
+  font-size: 12px;
+}
+
+.chat__users {
+  grid: 4;
+  grid-area: chatUsers;
+  overflow-y: scroll;
+}
+
+/* right Chat */
+.chat__right {
+  border-top: unset;
+  display: grid;
+}
+
+/* No Chat screen */
+.no__chat__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no__chat__info h4 {
+  font-size: 22px;
+}
+.no__chat__info .info {
+  font-size: 14px;
+}
+
+/* Inbox */
+.chat__inbox__wrapper {
+  display: grid;
+  grid-template-areas: "inboxheader" "chatinbox";
+  grid-template-columns: 100% 100%;
+  grid-template-rows: -webkit-min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  overflow: hidden;
+}
+
+#inbox__header {
+  grid-area: inboxheader;
+  padding: 10px 70px;
+}
+
+.chat__inbox {
+  grid-area: chatinbox;
+  display: grid;
+  grid-template-areas: "inboxchats" "inboxinput";
+  grid-template-rows: 450px -webkit-min-content;
+  grid-template-rows: 450px min-content;
+}
+
+.chat__msg {
+  font-size: 15px;
+}
+
+.inbox__chats {
+  grid-area: inboxchats;
+  border: 1px solid #313144;
+  padding: 20px 70px;
+  border-left: unset;
+  border-right: unset;
+  overflow-y: scroll;
+}
+
+.inbox__input {
+  grid-area: inboxinput;
+  padding: 15px 10px;
+}
+.inbox__input input {
+  width: 100%;
+  padding: 7px 15px;
+  border: 0.5px solid #292929;
+  box-shadow: unset;
+  border-radius: 10px;
+}
+.inbox__input input:focus {
+  border: unset;
+  box-shadow: unset;
+}
+
+.chat__msg {
+  background-color: #f2f2f2;
+  padding: 11px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+}
+
+.from_sender {
+  background-color: #333333;
+  color: #fff;
+}
+
+.errmsg {
+  font-size: 12px;
+  color: red;
+  margin: 10px;
+  text-align: center;
+}
+
+.loading {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  height: 100vh;
+  width: 100%;
+  font-family: "Lobster", cursive;
+}
+
+#inbox_header {
+  font-family: "Lobster", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+}
