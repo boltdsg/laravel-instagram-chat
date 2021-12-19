@@ -1,3 +1,5 @@
+# Instagram Chat Clone Using Laravel, ReactJS, GraphQL & MYSQL
+
 ## Mutations
 
 ## Regiser a user
@@ -287,4 +289,42 @@ sendeMessage(
                 </div>
             </Container>
   </header>
+```
+
+### Inbox HTML Code
+```
+    <Container className="container">
+        <div className="chat__wrapper">
+
+        </div>
+    </Container>
+```
+
+### Header HTML Code
+
+```
+    <Container>
+        <div className="header__wrapper">
+            <div id="logo">
+                <span>Laravel Instagram Chat</span>
+            </div>
+
+            <div className="header__actions">
+                <button className="logout__btn">
+                    <box-icon name="log-out"></box-icon>
+                </button>
+            </div>
+        </div>
+    </Container>
+```
+
+### NoChatScreen HTML Code
+```
+    <div className="no__chat__wrapper">
+        <div className="no__chat__info">
+            <box-icon name="message-square-detail"></box-icon>
+            <h4>Your Messages</h4>
+            <div className="info">Send private message to a friend</div>
+        </div>
+    </div>
 ```
