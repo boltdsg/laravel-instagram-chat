@@ -1,4 +1,4 @@
-# Instagram Chat Clone Using Laravel, ReactJS, GraphQL & MYSQL
+# Instagram Chat Clone Using Laravel, ReactJS, GraphQL, MYSQL & Pusher
 
 ## Mutations
 
